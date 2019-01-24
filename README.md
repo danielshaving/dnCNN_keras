@@ -35,18 +35,18 @@ Noisy and denoised images are saved in 'snapshot'.
 
 ### Network Architecture and Design Rationale
 
-![Pic](images/dncnn.png)
+![Pic](Result_Image/dncnn.png)
 
 
 Batch normalization and residual learning are beneficial to Gaussian denoising (especially for a single noise level). The residual of a noisy image corrupted by additive white Gaussian noise (AWGN) follows a constant Gaussian distribution which stablizes batch normalization during training.
 
 Histogram of noisy patches, clean patches, and residual (noise) patches from a batch of training. The noise level is 25, the patch size is 40x40, the batch size is 128.
 
-![Pic](images/batch1.png)
+![Pic](Result_Image/batch1.png)
 
 Histogram of noisy patches, clean patches, and residual (noise) patches from another batch of training. The noise level is 25, the patch size is 40x40, the batch size is 128.
 
-![Pic](images/batch2.png)
+![Pic](Result_Image/batch2.png)
 
 Noise-free image super-resolution does not have this property.
 Predicting the residual can be interpreted as performing one gradient descent inference step at starting point (i.e., noisy image).
@@ -72,11 +72,11 @@ Optimization : SGD
 
 #### Results
 
-![Pic](images/unnamed.png)
+![Pic](Result_Image/unnamed.png)
 
-![Pic](images/unnamed.jpg)
+![Pic](Result_Image/unnamed.jpg)
 
-![Pic](images/unnamed-2.png)
+![Pic](Result_Image/unnamed-2.png)
 
 #### Gaussian Denoising
 
